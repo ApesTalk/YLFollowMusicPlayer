@@ -10,6 +10,6 @@
 以上，代码简单，仅供学习使用。
 
 ## 效果图
-![播放页面]()
+![播放页面](https://github.com/lqcjdx/YLFollowMusicPlayer/blob/master/YLFollowMusicPlayer/musicplayer.gif)
 
-![锁屏页面]()
+![锁屏页面](https://github.com/lqcjdx/YLFollowMusicPlayer/blob/master/YLFollowMusicPlayer/lockscreen.png)
