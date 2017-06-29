@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YLFollowMusicPlayer' do
+pod 'Masonry'
+pod 'NAKPlaybackIndicatorView'
+pod 'SDWebImage', '~>3.8'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
+end

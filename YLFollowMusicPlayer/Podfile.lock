@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.0.2)
+  - NAKPlaybackIndicatorView (0.0.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - UITableView+FDTemplateLayoutCell (1.6)
+
+DEPENDENCIES:
+  - Masonry
+  - NAKPlaybackIndicatorView
+  - SDWebImage (~> 3.8)
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  NAKPlaybackIndicatorView: 794dd97576fe074bb1844c19ebcbf7509384a47f
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+
+PODFILE CHECKSUM: 8d1289671b7c841ab64ad0d3be0bd87f6db27a24
+
+COCOAPODS: 1.1.1
