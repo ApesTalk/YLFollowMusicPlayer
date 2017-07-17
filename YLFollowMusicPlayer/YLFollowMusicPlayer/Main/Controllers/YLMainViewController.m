@@ -130,6 +130,9 @@ static NSString *cellIdentifier = @"YLMainMusicListCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    YLPlayerViewController *player = [YLPlayerViewController sharePalyer];
+    [self.navigationController pushViewController:player animated:YES];
+    [player loadMusics:musicList withIndex:indexPath.row];
 }
 
 

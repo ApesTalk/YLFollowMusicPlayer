@@ -14,7 +14,22 @@
 
 + (instancetype)sharePalyer;
 
+/**
+ 加载所有音乐
+ 
+ @param musics 音乐列表
+ */
 - (void)loadMusics:(NSArray *)musics;
+
+
+/**
+ 加载音乐
+ 
+ @param musics 音乐列表
+ @param index 当前音乐索引
+ */
+- (void)loadMusics:(NSArray *)musics withIndex:(NSInteger)index;
+
 - (BOOL)isPlaying;
 
 @end

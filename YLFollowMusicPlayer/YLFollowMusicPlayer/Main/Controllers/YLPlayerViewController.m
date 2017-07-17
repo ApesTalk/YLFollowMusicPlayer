@@ -56,6 +56,8 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 - (instancetype)init
 {
     if(self = [super init]){
+        _currentIndex = -1;
+        
         _titleView = [[YLPlayTitleView alloc]initWithFrame:CGRectMake(0, 0, kFrameWidth - 120, kNavigationBarHeight - kStatusBarHeight)];
         _titleView.tintColor = [UIColor blackColor];
         _bgView = [[UIImageView alloc]init];
@@ -117,7 +119,6 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 //    _needle.center = CGPointMake(_needle.center.x - 8, _needle.center.y + 10);
 //    pauseNeedleCenter = _needle.center;
     
-    [self resetStreamer];
     
     [self remoteControlAfterIOS71];
     
@@ -237,11 +238,27 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     }
 }
 
+- (void)setCurrentIndex:(NSInteger)currentIndex
+{
+    if(_currentIndex  != currentIndex && currentIndex >= 0){
+        _currentIndex = currentIndex;
+        [self resetStreamer];
+    }
+}
+
 - (void)loadMusics:(NSArray *)musics
 {
     _musicList = musics;
     if(_musicList.count > 0){
-        _currentIndex = 0;
+        self.currentIndex = 0;
+    }
+}
+
+- (void)loadMusics:(NSArray *)musics withIndex:(NSInteger)index
+{
+    _musicList = musics;
+    if(_musicList.count > index){
+        self.currentIndex = index;
     }
 }
 
